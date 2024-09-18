@@ -5736,7 +5736,12 @@ iframe {
     margin-right: 10px; /* Espacio entre la imagen y el nombre */
     transition: transform 0.3s ease; /* Transición suave */
 }
-
+.profile-image2 {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.0s ease; /* Transición suave */
+}
 .profile-text {
     font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
     color: #333; /* Color del texto */
