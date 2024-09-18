@@ -1240,6 +1240,19 @@ window.onclick = function(event) {
 
     // Observar todos los videos
     videos.forEach(video => observer.observe(video));
+
+    function resizeImage() {
+        var img = document.getElementById("responsive-img");
+        if (window.innerWidth <= 768) {
+            img.style.maxWidth = "30%";
+        } else {
+            img.style.maxWidth = "10%";
+        }
+    }
+
+    // Run the function on load and on resize
+    window.onload = resizeImage;
+    window.onresize = resizeImage;
   });
 
 
