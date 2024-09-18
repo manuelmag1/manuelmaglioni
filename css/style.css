@@ -5741,7 +5741,6 @@ iframe {
 .profile-text {
     font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
     color: #333; /* Color del texto */
-	align-items: center;
 }
 
 
@@ -5764,4 +5763,8 @@ iframe {
         flex: 1 1 100%; /* En pantallas pequeñas, los videos ocupan el 100% del contenedor */
         max-width: 100%; /* Asegura que los videos no excedan el 100% del contenedor */
     }
+	.profile-text {
+		font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+		color: #333; /* Color del texto */
+	}
 }
