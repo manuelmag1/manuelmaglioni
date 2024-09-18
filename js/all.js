@@ -1213,4 +1213,33 @@ window.onclick = function(event) {
 }
 
 
+//Reproduccion con scroll
+  document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll(".video-item");
+
+    // Crear un observador de intersección
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+
+        // Si el video está en la pantalla
+        if (entry.isIntersecting) {
+          // Pausar todos los videos
+          videos.forEach(v => v.pause());
+
+          // Reproducir solo el video visible
+          video.play();
+        } else {
+          // Pausar el video si ya no está visible
+          video.pause();
+        }
+      });
+    }, {
+      threshold: 0.75 // 75% del video debe estar visible para que se reproduzca
+    });
+
+    // Observar todos los videos
+    videos.forEach(video => observer.observe(video));
+  });
+
 
