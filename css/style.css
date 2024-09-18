@@ -5674,7 +5674,7 @@ iframe {
 /* Estilos para el pop-up */
 .popup {
     display: none; /* Oculto por defecto */
-    position: fixed;
+    position:fixed  ;
     z-index: 1;
     left: 0;
     top: 0;
@@ -5690,7 +5690,7 @@ iframe {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 600px;
+    max-width: 1000px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
@@ -5736,9 +5736,7 @@ iframe {
     margin-right: 10px; /* Espacio entre la imagen y el nombre */
     transition: transform 0.3s ease; /* Transición suave */
 }
-.profile-image2 {
-	width: auto;
-}
+
 
 .profile-text {
     font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
